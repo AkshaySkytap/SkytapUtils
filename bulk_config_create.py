@@ -16,10 +16,15 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 #-----------------------------------------------------------------------
-A python script to run a  HTTP POST command to the Skytap API
-to add a new schedule to an existing configuration, outputs json.
-This is a very simple python script to serve as an example
-for beginner to get started making API calls to Skytap.
+A python script to run a create multiple configurations from a single template.
+The script takes a minimum of 2 arguments:
+	1) Template ID: The ID of the template to create the configurations from
+	2) Number of Instances: Number of configurations to make
+
+Anything after the 2nd argument will be treated as an optional 3rd argument which
+is the name of the generated configurations.  If nothing is supplied, it will default
+to the template name.  Once each configuration is created, the final name will be
+appended with a hyphen and number signifying where in the order it was created.
 
 This code was tested with python 2.7.5
 
