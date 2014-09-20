@@ -63,7 +63,7 @@ if (len(sys.argv) < 3):
 	sys.exit()
 
 template_id = sys.argv[1]
-num_instances = int(sys.argv[2])
+num_instances = int(sys.argv[2]) if (type(sys.argv[2]) is int) else 0
 config_prefix = ""
 
 if (len(sys.argv) > 3):
