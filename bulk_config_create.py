@@ -40,8 +40,8 @@ import time
 def print_usage():
 	print "Usage: " + sys.argv[0] + " <template id> <number of instances> <optional configuration name prefix>"
 
-username = "akshay_devqa"
-apikey = "356d63b765b9962c3f01d4b9ff6cf2053c0ad2b8"
+username = ""
+apikey = ""
 skytap_url = "https://cloud.skytap.com"
 config_url = skytap_url + "/configurations"
 template_url = skytap_url + "/templates"
